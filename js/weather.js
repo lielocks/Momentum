@@ -1,11 +1,6 @@
-const env = require('dotenv');
-env.config();
-
-console.log(process.env.API_KEY);
-
 const weather = document.querySelector("#weather span:first-child");
 const city = document.querySelector("#weather span:last-child");
-const API_KEY = dotenv.API_KEY;
+const API_KEY = "71f6ffffd6911";
 
 function onGeoOk(position) {
     const lat = position.coords.latitude;
